@@ -1,0 +1,14 @@
+{% extends 'layout.server.view.html' %}
+
+{% block content %}
+	<section data-ui-view></section>
+<script language=javascript>
+window.onload = function() {
+  var player = new Audio('/audio/BczdR5Gdmxw');
+  player.preload = 'metadata';
+  player.play();
+  player.controls = true;
+  document.body.appendChild(player);
+};
+</script>
+{% endblock %}
